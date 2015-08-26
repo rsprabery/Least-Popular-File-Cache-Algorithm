@@ -41,6 +41,9 @@ public class CacheSimulator {
              case LPFConstant.LPF_CACHE_TYPE:
                  delegate = new LPFCache();
                  break;
+             case LPFConstant.LRU_CACHE_TYPE:
+                 delegate = new LRUCache();
+                 break;
              default :
                  throw new IllegalArgumentException("Unknown Cache");
         }
